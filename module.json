@@ -1,0 +1,33 @@
+{
+  "id": "old-dragon-2e-standard-initiative",
+  "title": "Iniciativa Padrão para Old Dragon 2E",
+  "description": "Iniciativa Padrão para Old Dragon 2E",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Eddson Jr",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "scripts/initiative.js"
+  ],
+  "socket": true,
+  "manifest": "https://github.com/module.json",
+  "download": "https://github.com/.zip",
+  "url": "https://github.com/",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "13.338",
+    "maximum": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "olddragon2e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  }
+}
