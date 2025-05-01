@@ -1,4 +1,4 @@
-# 🧠 Substituição de Iniciativa – Old Dragon 2ª Edição (Foundry VTT)
+# 🧠 Iniciativa Padrão para Old Dragon 2E
 
 Este módulo substitui o sistema padrão de iniciativa do sistema **Old Dragon 2ª Edição** no Foundry VTT, aplicando uma lógica baseada em **teste de atributo** conforme a regra do LB1. O módulo realiza rolagens automáticas, classifica os combatentes e apresenta um **relatório visual em forma de tabela** no chat.
 
