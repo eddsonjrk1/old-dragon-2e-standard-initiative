@@ -20,7 +20,7 @@ jobs:
 
       - name: Compactar o módulo
         run: |
-          zip -r module.zip module.json scripts README.md LICENSE 2>/dev/null || true
+          zip -r old-dragon-2e-standard-initiative.zip module.json scripts README.md LICENSE 2>/dev/null || true
 
       - name: Criar release no GitHub
         uses: softprops/action-gh-release@v2
