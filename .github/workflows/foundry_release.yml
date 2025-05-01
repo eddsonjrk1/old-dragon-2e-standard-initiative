@@ -23,4 +23,4 @@ jobs:
           actionToken: ${{ secrets.GITHUB_TOKEN }}
           manifestFileName: 'module.json'
           manifestProtectedTrue: true
-          publicRepositoryAndBranch: 'foundryvtt-dcc/dcc-content/main'
+          publicRepositoryAndBranch: 'eddsonjrk1/old-dragon-2e-standard-initiative/main'
