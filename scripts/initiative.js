@@ -28,10 +28,10 @@ function buildInitiativeReport(successes, failures, npcs, combatantsWithoutIniti
   report += `
     <table style="width:100%; border-collapse: collapse;">
       <tr>
-        <th style="text-align:left; padding: 3px;">Participant</th>
-        <th style="text-align:center; padding: 3px;">Roll</th>
-        <th style="text-align:center; padding: 3px;">Target</th>
-        <th style="text-align:center; padding: 3px;">Result</th>
+        <th style="text-align:left; padding: 3px;">Combatente</th>
+        <th style="text-align:center; padding: 3px;">Rolagem</th>
+        <th style="text-align:center; padding: 3px;">Alvo</th>
+        <th style="text-align:center; padding: 3px;">Resultado</th>
       </tr>`;
 
   for (const s of successes) {
