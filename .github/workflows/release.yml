@@ -27,6 +27,6 @@ jobs:
         with:
           name: ${{ github.ref_name }}
           tag_name: ${{ github.ref_name }}
-          files: module.zip
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          files: |
+            old-dragon-2e-standard-initiative.zip
+            module.json
