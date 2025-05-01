@@ -2,7 +2,7 @@
   "id": "old-dragon-2e-standard-initiative",
   "title": "Iniciativa Padrão para Old Dragon 2E",
   "description": "Iniciativa Padrão para Old Dragon 2E",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "authors": [
     {
       "name": "Eddson Jr",
@@ -26,6 +26,13 @@
       {
         "id": "olddragon2e",
         "type": "system",
+        "compatibility": {}
+      }
+    ],
+    "conflicts": [
+      {
+        "id": "chatreactions",
+        "type": "module",
         "compatibility": {}
       }
     ]
