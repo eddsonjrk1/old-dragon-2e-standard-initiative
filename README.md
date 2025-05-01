@@ -47,6 +47,21 @@ O sistema também intercepta combatentes **adicionados após o início do combat
 
 ---
 
+---
+
+## 🛠 Instalação
+
+1. Copie o link do Manifesto:
+```text
+https://github.com/eddsonjrk1/old-dragon-2e-standard-initiative/releases/latest/download/module.json
+```
+2. No FoundryVTT, vá em Add-on Modules e então clique em Install Module.
+3. Em Manifest URL, cole o link copiado acima e então clique em Install.
+3. Ative o módulo no menu de módulos do mundo.
+4. Pronto! O sistema já estará interceptando a rolagem de iniciativa.
+
+---
+
 ## 📄 Licença
 
 Este módulo é disponibilizado sob a licença [MIT](LICENSE). Sinta-se livre para modificar, distribuir ou adaptar conforme sua necessidade de mesa.
