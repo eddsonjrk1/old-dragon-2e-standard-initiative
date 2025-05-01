@@ -20,47 +20,47 @@ function calculateInitiative(actor, rolled) {
 }
 
 function buildInitiativeReport(successes, failures, npcs, combatantsWithoutInitiative) {
-  let report = `<h2>Initiative Test</h2>`;
+  let report = `<h2>Teste de Iniciativa</h2>`;
   if (combatantsWithoutInitiative.length > 0) {
-    report += `<p><i>Automatic roll for combatants without initiative.</i></p>`;
+    report += `<p><i>Rolado automaticamente para combatentes sem iniciativa.</i></p>`;
   }
 
   report += `
     <table style="width:100%; border-collapse: collapse;">
       <tr>
-        <th style="text-align:left; padding: 4px;">Participant</th>
-        <th style="text-align:center; padding: 4px;">Roll</th>
-        <th style="text-align:center; padding: 4px;">Target</th>
-        <th style="text-align:center; padding: 4px;">Result</th>
+        <th style="text-align:left; padding: 3px;">Participant</th>
+        <th style="text-align:center; padding: 3px;">Roll</th>
+        <th style="text-align:center; padding: 3px;">Target</th>
+        <th style="text-align:center; padding: 3px;">Result</th>
       </tr>`;
 
   for (const s of successes) {
     report += `
       <tr>
-        <td style="padding: 4px;">${s.name}</td>
-        <td style="text-align:center; padding: 4px;">${s.rolled}</td>
-        <td style="text-align:center; padding: 4px;">${s.bestAttribute}</td>
-        <td style="text-align:center; padding: 4px;">✅ Success</td>
+        <td style="padding: 3px;">${s.name}</td>
+        <td style="text-align:center; padding: 3px;">${s.rolled}</td>
+        <td style="text-align:center; padding: 3px;">${s.bestAttribute}</td>
+        <td style="text-align:center; padding: 3px;">✅ Success</td>
       </tr>`;
   }
 
   for (const n of npcs) {
     report += `
       <tr>
-        <td style="padding: 4px;">${n.name}</td>
-        <td style="text-align:center; padding: 4px;">—</td>
-        <td style="text-align:center; padding: 4px;">—</td>
-        <td style="text-align:center; padding: 4px;">👾 NPC</td>
+        <td style="padding: 3px;">${n.name}</td>
+        <td style="text-align:center; padding: 3px;">—</td>
+        <td style="text-align:center; padding: 3px;">—</td>
+        <td style="text-align:center; padding: 3px;">👾 NPC</td>
       </tr>`;
   }
 
   for (const f of failures) {
     report += `
       <tr>
-        <td style="padding: 4px;">${f.name}</td>
-        <td style="text-align:center; padding: 4px;">${f.rolled}</td>
-        <td style="text-align:center; padding: 4px;">${f.bestAttribute}</td>
-        <td style="text-align:center; padding: 4px;">❌ Failure</td>
+        <td style="padding: 3px;">${f.name}</td>
+        <td style="text-align:center; padding: 3px;">${f.rolled}</td>
+        <td style="text-align:center; padding: 3px;">${f.bestAttribute}</td>
+        <td style="text-align:center; padding: 3px;">❌ Failure</td>
       </tr>`;
   }
 
