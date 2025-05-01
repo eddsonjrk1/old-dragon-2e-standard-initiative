@@ -19,6 +19,10 @@ function calculateInitiative(actor, rolled) {
   return { initiative, success, bestAttribute };
 }
 
+function truncateName(name, maxLength = 10) {
+  return name.length > maxLength ? name.slice(0, maxLength) + "…" : name;
+}
+
 function buildInitiativeReport(successes, failures, npcs, combatantsWithoutInitiative) {
   let report = `<h2>Teste de Iniciativa</h2>`;
   if (combatantsWithoutInitiative.length > 0) {
@@ -37,7 +41,7 @@ function buildInitiativeReport(successes, failures, npcs, combatantsWithoutIniti
   for (const s of successes) {
     report += `
       <tr>
-        <td style="padding: 3px;">${s.name}</td>
+        <td style="padding: 3px;">${truncateName(s.name, 10)}</td>
         <td style="text-align:center; padding: 3px;">${s.rolled}</td>
         <td style="text-align:center; padding: 3px;">${s.bestAttribute}</td>
         <td style="text-align:center; padding: 3px;">✅ Sucesso</td>
@@ -47,7 +51,7 @@ function buildInitiativeReport(successes, failures, npcs, combatantsWithoutIniti
   for (const n of npcs) {
     report += `
       <tr>
-        <td style="padding: 3px;">${n.name}</td>
+        <td style="padding: 3px;">${truncateName(n.name, 10)}</td>
         <td style="text-align:center; padding: 3px;">—</td>
         <td style="text-align:center; padding: 3px;">—</td>
         <td style="text-align:center; padding: 3px;">👾 NPC</td>
@@ -57,7 +61,7 @@ function buildInitiativeReport(successes, failures, npcs, combatantsWithoutIniti
   for (const f of failures) {
     report += `
       <tr>
-        <td style="padding: 3px;">${f.name}</td>
+        <td style="padding: 3px;">${truncateName(f.name, 10)}</td>
         <td style="text-align:center; padding: 3px;">${f.rolled}</td>
         <td style="text-align:center; padding: 3px;">${f.bestAttribute}</td>
         <td style="text-align:center; padding: 3px;">❌ Falha</td>
