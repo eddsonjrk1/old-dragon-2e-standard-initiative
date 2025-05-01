@@ -47,8 +47,6 @@ O sistema também intercepta combatentes **adicionados após o início do combat
 
 ---
 
----
-
 ## 🛠 Instalação
 
 1. Copie o link do Manifesto:
