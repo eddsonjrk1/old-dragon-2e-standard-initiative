@@ -40,7 +40,7 @@ function buildInitiativeReport(successes, failures, npcs, combatantsWithoutIniti
         <td style="padding: 3px;">${s.name}</td>
         <td style="text-align:center; padding: 3px;">${s.rolled}</td>
         <td style="text-align:center; padding: 3px;">${s.bestAttribute}</td>
-        <td style="text-align:center; padding: 3px;">✅ Success</td>
+        <td style="text-align:center; padding: 3px;">✅ Sucesso</td>
       </tr>`;
   }
 
@@ -60,7 +60,7 @@ function buildInitiativeReport(successes, failures, npcs, combatantsWithoutIniti
         <td style="padding: 3px;">${f.name}</td>
         <td style="text-align:center; padding: 3px;">${f.rolled}</td>
         <td style="text-align:center; padding: 3px;">${f.bestAttribute}</td>
-        <td style="text-align:center; padding: 3px;">❌ Failure</td>
+        <td style="text-align:center; padding: 3px;">❌ Falha</td>
       </tr>`;
   }
 
