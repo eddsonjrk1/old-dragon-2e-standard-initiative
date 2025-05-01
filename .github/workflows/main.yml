@@ -7,7 +7,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: Get Version                                   
+      shell: bash
+      id: get-version
+      run: echo "::set-output name=version::$(node ./.github/workflows/get-version.js)"
     - run: zip -r ./eddsonjrk1/old-dragon-2e-standard-initiative.zip module.json scripts/
+    - name: Create Release                                
+      id: create_versioned_release
+      uses: ncipollo/release-action@v1
+      with:
+        allowUpdates: true 
+        name: Release ${{ steps.get-version.outputs.version }} 
+        draft: false
+        prerelease: false
+        token: ${{ secrets.GITHUB_TOKEN }}
+        artifacts: './module.json,./eddsonjrk1/old-dragon-2e-standard-initiative.zip'
+        tag: ${{ steps.get-version.outputs.version }} 
     - name: Create Release
       id: create_latest_release
       uses: ncipollo/release-action@v1
